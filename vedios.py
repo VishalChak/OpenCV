@@ -10,10 +10,12 @@ import numpy as np
 import cv2
 
 
-path = ""
-cap = cv2.VideoCapture('vtest.avi')
+path = "/home/vishal/ML/OpenCV/sid.mp4"
+
+cap = cv2.VideoCapture(path)
 
 while(cap.isOpened()):
+    print("vishal")
     ret, frame = cap.read()
 
     gray = cv2.cvtColor(frame, cv2.COLOR_BGR2GRAY)
